@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: hsl(230, 17%, 14%);
+    transition: background 0.5s linear;
+}
+
+body.white {
+    background-color: hsl(0, 0%, 100%)
+}
+
+header {
+    background-color: hsl(232, 19%, 15%);
+    border-radius: 0 0 20px 20px;
+    height: 200px;
+    transition: background 0.5s linear;
+}
+
+body.white header {
+    background-color: hsl(225, 100%, 98%);
+}
+
+body.white header .title h2 {
+    color: hsl(230, 17%, 14%);
+}
+
+body.white header .title p {
+    color: hsl(228, 12%, 44%)
+}
+
+body.white header .dark-mode {
+    color: hsl(230, 22%, 74%);
+}
+
+body.white .dark {
+    background: hsl(230, 22%, 74%);
+}
+
+body.white header .button-dark {
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 21px;
+}
+
+/* 
+- White (BG): hsl(0, 0%, 100%)
+- Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
+- Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
+- Dark Grayish Blue (Text): hsl(228, 12%, 44%)
+- Very Dark Blue (Text): hsl(230, 17%, 14%) */
+
+/* - Very Dark Blue (BG): hsl(230, 17%, 14%)
+- Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
+- Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
+- Desaturated Blue (Text): hsl(228, 34%, 66%)
+- White (Text): hsl(0, 0%, 100%) */
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.title h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.title p {
+    font-weight: 700;
+    color: hsl(228, 34%, 66%)
+}
+
+.dark-mode {
+    font-weight: 700;
+    color: hsl(228, 34%, 66%);
+    display: flex;
+}
+
+.dark {
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    width: 40px;
+    height: 20px;
+    border: none;
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button-dark {
+    background-color: hsl(232, 19%, 15%);
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    margin-left: 3px;
+    transition: 0.5s linear;
+}
+
+/* Cards */
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-top: -90px;
+    width: 100%;
+}
+
+.card, .card-stats {
+    padding: 20px;
+    width: 20%;
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 5px;
+    color: hsl(228, 34%, 66%);
+    font-weight: 700;
+    text-align: center;
+}
+
+body.white .card, body.white .card-stats {
+    background-color: hsl(227, 47%, 96%);
+    /* color:hsl(230, 17%, 14%); */
+    color: hsl(228, 12%, 44%);
+}
+
+.card:hover, .card-stats:hover {
+    background-color: hsl(230, 27%, 29%);
+    cursor: pointer;
+}
+
+body.white .card:hover, body.white .card-stats:hover {
+    background-color: hsl(235, 23%, 90%);
+    cursor: pointer;
+}
+
+.card div {
+    padding: 20px 0;
+}
+
+.card div p {
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.card small:nth-of-type(1) {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card small:nth-of-type(2) {
+    color: hsl(163, 72%, 41%);
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card small img {
+    padding-right: 5px;
+}
+
+.card h3 {
+    font-size: 50px;
+    color: hsl(0, 0%, 100%);
+}
+
+body.white .card h3, body.white .stats-call h3 {
+    color: hsl(230, 17%, 14%);
+}
+
+.facebook {
+    border-top: 5px solid hsl(208, 92%, 53%);
+}
+
+.twitter {
+    border-top: 5px solid hsl(203, 89%, 53%);
+}
+
+.instagram {
+    border-top: 5px solid orangered;
+}
+
+.youtube {
+    border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+.youtube small:nth-of-type(2) {
+    color: hsl(356, 69%, 56%)
+}
+
+/* Stats */
+
+.stats {
+    margin-top: 2%
+}
+
+.stats h2 {
+    color: hsl(0, 0%, 100%)
+}
+
+body.white .stats h2 {
+    color: hsl(228, 12%, 44%);
+}
+
+.container-stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-stats {
+    width: 20.1%;
+    margin: 10px 0;
+}
+
+.stats-call, .calling {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5% 0;
+}
+
+.stats-call {
+    height: 30px;
+    display: flex;
+    align-items: baseline;
+}
+
+.stats-call h3 {
+    font-size: 25px;
+    color: hsl(0, 0%, 100%);
+}
+
+.stats-call small {
+    height: 10px;
+    display: flex;
+    align-items: center;
+    color: hsl(163, 72%, 41%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body.white .attribution{
+    color: black;
+}
+
+@media screen and (max-width:500px) {
+    header {
+        position: static;
+        height: 200px
+    }
+    .header {
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+    }
+    .line {
+        display: inline !important;
+        height: 1px;
+        background-color: hsl(228, 34%, 66%);
+        margin: 10px 0;
+    }
+    body.white .line {
+        background-color: hsl(228, 12%, 44%)
+    }
+    .dark-mode {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card-container {
+        margin-top: -50px !important
+    }
+    .stats h2 {
+        margin: 20px 0;
+    }
+    .card-container, .stats {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .card, .card-stats {
+        width: 100%;
+    }
+    .card {
+        margin: 10px 0
+    }
+}
