@@ -51,7 +51,7 @@ Users should be able to:
 const btn = document.getElementById('btn')
 
 btn.addEventListener("click",(e) =>{
-    document.body.classList.toggle('white', e.target.checked)
+    document.body.classList.toggle('white')
 })
 }
 ```
