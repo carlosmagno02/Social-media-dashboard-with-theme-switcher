@@ -155,7 +155,7 @@ body.white .card:hover, body.white .card-stats:hover {
     text-transform: uppercase;
 }
 
-.card small:nth-of-type(1) {
+.card .username {
     height: 20px;
     display: flex;
     align-items: center;
