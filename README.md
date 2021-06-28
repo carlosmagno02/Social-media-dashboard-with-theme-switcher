@@ -64,5 +64,4 @@ Keep training html,css and improve javascript skills
 ## Author
 
 - Repository - [Carlos Magno](https://github.com/carlosmagno02)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/carlosmagno02)
-- Email - [carlosmbr4@hotmail.com](carlosmbr4@hotmail.com)
+- Frontend Mentor - [@carlosmagno02](https://www.frontendmentor.io/profile/carlosmagno02)
